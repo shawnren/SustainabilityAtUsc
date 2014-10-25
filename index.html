@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sustainability at USC</title>
+	<meta property="og:image" content="images/fbpreview.png"/>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=10.0; user-scalable=1;" />
+	<!--CSS stylsheets-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="stylemobile.css" />
+	<!--jQuery plugin-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!--Google Maps API-->
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+			html { height: 100%; }
+			body { height: 100%; margin: 0; padding: 0; }
+			#map-canvas_learn { height: 100%; z-index: 2;}
+	</style>
+	<script type="text/javascript"
+		 src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyD7bHyR6hGL-xEW7EKG66Lh07XyWObqljE&sensor=false">
+	</script>
+	<!--Javascript attachments-->
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="learn.js"></script>
+
+	<!-- Google Analytics --> 
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-49234649-1', 'usc.edu');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+<!--begin Facebook API stuff-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=787908261235073";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--begin Twitter API stuff-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+<!-- NAVIGATION BAR FOR HOME PAGE -->
+<div class="navbar" id="navbar1">
+	<a href="#" class="aboutlink">
+		<div style="background-color: #199FF2" class="navcircle"></div>
+		<p>intro</p>
+	</a>
+	<a href="#" class="learnlink">
+		<div style="background-color: #D6FA66" id="navcircle_active" class="navcircle"></div>
+		<p>learn</p>
+	</a>
+	<a href="#" class="campaignlink">
+		<div style="background-color: #FCFCFF" class="navcircle"></div>
+		<p>help out</p>
+	</a>
+	<a href="#" class="schedulelink">
+		<div style="background-color: #458164" class="navcircle"></div>
+		<p>earth month</p>
+	</a>
+	<a href="#" class="sharelink">
+		<div style="background-color: #0B4366" class="navcircle"></div>
+		<p>share</p>
+	</a>
+</div>
+
+<!-- NAVIGATION BAR FOR ALL OTHER PAGES -->
+<div class="navbar" id="navbar2">
+	<a href="#" class="aboutlink">
+		<div style="background-color: #199FF2" class="navcircle"></div>
+		<p>intro</p>
+	</a>
+	<a href="#" class="learnlink">
+		<div style="background-color: #D6FA66" class="navcircle"></div>
+		<p>learn</p>
+	</a>
+	<a href="#" class="campaignlink">
+		<div style="background-color: #FCFCFF" class="navcircle"></div>
+		<p>help out</p>
+	</a>
+	<a href="#" class="schedulelink">
+		<div style="background-color: #458164" class="navcircle"></div>
+		<p>earth month</p>
+	</a>
+	<a href="#" class="sharelink">
+		<div style="background-color: #0B4366" class="navcircle"></div>
+		<p>share</p>
+	</a>
+</div>
+
+
+<div id="container">
+
+<!-- INDEX PAGE -->
+<div id="index">
+	<!--<div id="indexpopup"><p>For the full experience, view this site on a laptop or computer!</p></div>-->
+	<video autoplay loop muted>
+		 <source src="background/background.mp4"  type="video/mp4; codecs=avc1.42E01E,mp4a.40.2">
+		 <source src="background/background.webm" type="video/webm; codecs=vp8,vorbis">
+		 <source src="background/background.ogv"  type="video/ogg; codecs=theora,vorbis">
+	</video>
+	<div id="title">
+		<h1>Sustainability<br>at <span id="titlespecial">USC</span></h1>
+		<h4>a look into the environmental sustainability of our campus</h4>
+	</div>
+
+	<div id="indexlogosright">
+		<img src="images/earthmonthlogo.png"><img src="images/esalogo.png">
+	</div>
+
+</div>
+
+<!-- ABOUT PAGE -->
+<div id="about">
+	<div class="break"></div>
+	<h1>About</h1>
+	<div id="abouttext">
+		<div id="aboutleft">
+			<br>
+			<p>This website was made to spread student awareness about sustainability at USC. Our campus is a great place where students come together to learn and grow, so it just seems right to make it a sustainable and healthy place to live.
+			<br><br>
+			Over the next few pages, you'll be treated to a look at some of the steps being taken on campus to improve the sustainability of our community and what you can do to join the movement.
+			<br><br>
+			So what are you waiting for? Dig in!
+			</p>
+		</div>
+		<div id="aboutright"> 
+			<img src="images/tree.png" height="500px">
+		</div>
+	</div>
+</div>
+
+<!-- LEARN PAGE -->
+<div id="learn">
+	<div id="map-canvas_learn"></div>
+	<div id="learnpopup">
+		<img src="images/x.png" id="closelightbox" style="float:right; width:20px; cursor:pointer; margin: 12px">
+		<br> 
+		<p>To start, let&#39;s take a look at some steps USC has taken to improve the sustainability of our campus. Click around to see what our school has done make our campus more eco-friendly.</p>
+	</div>
+	<div id="learnpopupback"></div>
+</div>
+
+<!-- CAMPAIGN PAGE -->
+<div id="campaign">
+	<h1>1349-1375 JEFFERSON BOULEVARD</h1>
+	<div id="campaignleft">
+		<img src="images/frackingsite.jpg" height="100%">
+	</div>
+	<div id="campaigncopyright">
+		&copy; Some rights reserved by Neon Tommy
+		<br>
+		http://www.flickr.com/photos/neontommy/10151927365/sizes/c/
+	</div>
+	<div id="campaignright">
+		<p>Here&#39;s a chance to make our campus more sustainable &mdash; sign this petition asking USC&#39;s Vice Provost of Student Affairs to close down a fracking site just about 3 blocks off campus.
+		<br><br>
+		Fracking is a hotly debated topic in today&#39;s political sphere, with solid arguments on both sides. If you don&#39;t know what fracking is, it&#39;s basically a drilling process that extracts natural gas from the ground by pumping a mixture of water, sand, and chemicals into the ground. Opponents of fracking point out that these chemicals are dangerous to the environment if they seep into nearby groundwater or come back above ground, while supporters argue that natural gas is a cleaner energy source than coal and oil. 
+		<br><br>
+		In any case, fracking shouldn&#39;t be allowed in a residential area like the community around USC, where it can leak toxic chemicals that endanger the health of USC students and nearby residents.
+		<br><br>
+		If you want to help make our campus a more sustainable place to live and close down the fracking site just a few blocks off campus, please sign the petition below asking our Vice Provost of Student Affairs to stop operations of the site. 
+		<br>
+		</p>
+		<a href="http://www.change.org/petitions/usc-vice-provost-of-student-affairs-ainsley-carry-take-action-to-stop-extraction-of-oil-around-usc" target="_blank"><div id="campaignsignme">Sign the petition at change.org</div></a>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<!-- EARTH MONTH SCHEDULE PAGE -->
+<div id="schedule">
+	<div class="break"></div>
+	<h1>Earth Month</h1>
+	<div id="scheduletext">
+		<p>Want to get more involved? This month is Earth Month, so just come out to any of our events to learn more!<br>The list of Earth Month events can also be found here: <a href="http://www.facebook.com/events/240966609422461/" target="_blank">http://www.facebook.com/events/240966609422461/</a></p>
+
+		<div class="schedulecolumn">
+
+			<h2>March</h2>
+			<br>
+			<h4><span class="scheduleh3">28&nbsp;&nbsp;</span>Climate Palooza</h4><h5><span style="font-size:14px;">with</span> Visions and Voices &amp; GSG</h5>
+			<h6>Annenberg School | 3-8:30pm</h6><br>
+
+			<h2>April</h2>
+			<br>
+			<h4><span class="scheduleh3">1&nbsp;&nbsp;</span>Recly'Art: "Earth without Art is Eh"</h4><h5><span style="font-size:14px;">with</span> Performing Arts</h5>
+			<h6>Alumni Park | 12-1pm</h6><br>
+
+			<h4><span class="scheduleh3">1&nbsp;&nbsp;</span>Earth Month Kick Off Concert</h4><h5><span style="font-size:14px;">ft. Sneaky Gypsies, Goodkids, and Angeles Flight</span></h5>
+			<h6>Ground Zero | 7:30-9pm</h6>
+			<h5><span style="font-size:14px;">Free Milkshakes for the first 100 people!</span></h5><br>
+
+			<h4><span class="scheduleh3">2&nbsp;&nbsp;</span>Carnival On the Quad</h4><h5><span style="font-size:14px;">with</span> ESA Member Organizations</h5>
+			<h6>McCarthy Quad | 11am-2pm</h6><br>
+
+			<div class="schedulemore" id="sm1">Load more events...</div>
+
+			<div class="schedulemorehide" id="smh1">
+
+				<h4><span class="scheduleh3">2&nbsp;&nbsp;</span>California Roundtable Discussion</h4><h5><span style="font-size:14px;">with</span> PSA</h5>
+				<h6>MPH 102 | 7-8:30pm</h6><br>
+
+				<h4><span class="scheduleh3">5&nbsp;&nbsp;</span>Springfest: Greenfest!</h4><h5><span style="font-size:14px;"></span> </h5>
+				<h6>McCarthy Quad | 12-8pm</h6>
+				<h5><span style="font-size:14px;">Human hamster wheel, see-saw, and bikes to power Springfest. All participants receive a reusable cup to redeem a free drink.</span></h5><br>
+
+				<h4><span class="scheduleh3">6&nbsp;&nbsp;</span>CicLAvia</h4><h5><span style="font-size:14px;">with</span> SC OUTFITTERS</h5>
+				<h6>Meet at TroGro @ 9am | Return to TroGro @ 4pm</h6>
+				<h5><span style="font-size:14px;">Bring your own bike!</span></h5><br>
+
+				<h4><span class="scheduleh3">7&nbsp;&nbsp;</span>Bidder 70 Screening</h4><h5><span style="font-size:14px;">with</span> ACA</h5>
+				<h6>THH 102 | 7-9pm</h6><br>
+
+				<h4><span class="scheduleh3">9&nbsp;&nbsp;</span>BLACKFISH Screening</h4><h5><span style="font-size:14px;">with</span> USC Scientific Dive Team</h5>
+				<h6>TCC 227 | 5-6:30pm</h6><br>
+
+			</div>
+
+		</div>
+
+		<div class="schedulecolumn">
+
+			<div class="schedulemore" id="sm2">Load more events...</div>
+
+			<div class="schedulemorehide" id="smh2">
+
+				<h4><span class="scheduleh3">9&nbsp;&nbsp;</span>Tommy's Green Trivia</h4>
+				<h6>Tommy's Place | 7-9pm</h6><br>
+
+				<h4><span class="scheduleh3">10&nbsp;&nbsp;</span>DIY: Green Edition</h4><h5><span style="font-size:14px;">with</span> SEC</h5>
+				<h6>Parkside Performance Cafe/MPR | 4-7pm</h6><br>
+
+				<h4><span class="scheduleh3">11&nbsp;&nbsp;</span>Get Dirty with ESA: Irrigation System Workshop</h4><h5 style="display:inline"><span style="font-size:14px;">with the</span> USC Urban Garden</h5><h6 style="display:inline; margin-left:10px">| 12-1pm</h6><br><br>
+
+				<h4><span class="scheduleh3">15&nbsp;&nbsp;</span>PROMISED LAND Screening</h4><h5><span style="font-size:14px;">with</span> EAO</h5>
+				<h6>THH 201 | 7-10pm</h6><br>
+
+				<h4><span class="scheduleh3">18&nbsp;&nbsp;</span>Trip to the Science Center Aquarium</h4><h5><span style="font-size:14px;">with the</span> USC Scientific Dive Team</h5>
+				<h6>Meet outside Mudd Hall @ 1:50pm | return @ 3:30pm</h6><br>
+
+				<h4><span class="scheduleh3">19&nbsp;&nbsp;</span>Get Dirty with ESA: Composting Workshop</h4>
+				<h5 style="display:inline"><span style="font-size:14px;">with the</span> USC Urban Garden</h5><h6 style="display:inline; margin-left:10px">| 12-1pm</h6><br><br>
+
+				<h4><span class="scheduleh3">21&nbsp;&nbsp;</span>USC Earth Day Eco-Tour</h4>
+				<h6>Meet at Moreton Fig @ 12:50pm, 1-2pm</h6><br>
+
+				<h4><span class="scheduleh3">22&nbsp;&nbsp;</span>Earth Day Keynote Speaker</h4><h5><span style="font-size:14px;">with</span> USC Speakers Committee</h5>
+				<h6>Bovard Auditorium | 8-10pm</h6><br>
+
+				<h4><span class="scheduleh3">22&nbsp;&nbsp;</span>USC Environment Fair</h4><h5><span style="font-size:14px;">with</span> USC Staff Assembly</h5>
+				<h6>Trousdale Parkway | 11-1:30pm</h6><br>
+
+				<h4><span class="scheduleh3">23&nbsp;&nbsp;</span>ESA at the Farmer's Market</h4>
+				<h6>McCarthy Quad | 11-2pm</h6>
+				<h5><span style="font-size:14px;">First 100 people get free Good Karma Cafe!</span></h5><br>
+
+				<h4><span class="scheduleh3">23&nbsp;&nbsp;</span>Vegan Cookoff</h4><h5><span style="font-size:14px;">with</span> Tzu Ching Trojans</h5>
+				<h6>MRF | 7-8pm</h6><br>
+
+			</div>
+
+		</div>
+
+		<div class="schedulecolumn">
+
+			<div class="schedulemore" id="sm3">Load more events...</div>
+
+			<div class="schedulemorehide" id="smh3">
+
+				<h4><span class="scheduleh3">23&nbsp;&nbsp;</span>USConserve: Sustain Your Future, Grow Your Career</h4><h5><span style="font-size:14px;">with</span> Greeks Go Green</h5>
+				<h6>THH 301 | 8:30-10pm</h6>
+				<h5><span style="font-size:14px;">A Panel on Sustainable Initiatives</span></h5><br>
+
+				<h4><span class="scheduleh3">24&nbsp;&nbsp;</span>USC Environment Fair: Health Sciences Campus</h4>
+				<h6>Pappas Quad | 11am-1:30pm</h6><br>
+
+				<h4><span class="scheduleh3">24&nbsp;&nbsp;</span>Get Dirty with ESA: Tree Planting 101</h4><h5><span style="font-size:14px;">with</span> A Community Place</h5>
+				<h6>St. Marks Lutheran Church | 3-4pm</h6>
+				<h5><span style="font-size:14px;">5pm Sandwich Making. Free dinner at 6pm!<br>Address: 3651 S Vermont</span></h5><br>
+
+				<h4><span class="scheduleh3">26&nbsp;&nbsp;</span>Beach Cleanup</h4><h5><span style="font-size:14px;">with</span> GSG</h5>
+				<h6>Meet in TCC 244 | 9am-1pm</h6><br>
+
+				<h4><span class="scheduleh3">28&nbsp;&nbsp;</span>Yoga in the Park</h4>
+				<h6>Alumni Park | 12-1pm</h6>
+				<h5><span style="font-size:14px;">with Prana Giveaways</span></h5><br>
+
+				<h4><span class="scheduleh3">28&nbsp;&nbsp;</span>El Gigante Screening with LSA</h4><h5><span style="font-size:14px;">with disussion led by Carolina Caycedo and Dr. Macarena Gomez Barris</span></h5>
+				<h6>SOS B46 | 7-8:30pm</h6><br>
+
+				<h4><span class="scheduleh3">30&nbsp;&nbsp;</span>Trojan Community Exchange</h4><h5><span style="font-size:14px;">with</span> BSA, EAO, and Trojan Pride</h5>
+				<h6>Alumni Park | 12-3pm</h6>
+				<h5><span style="font-size:14px;">Bring this flyer with you to get some free pots and soil to plant it!</span></h5><br>
+
+				<h2>May</h2>
+				<br>
+				<h4><span class="scheduleh3">2&nbsp;&nbsp;</span>Sustainability Research Symposium</h4>
+				<h6>Davidson Conference Center | 9am-12pm</h6><br>
+
+
+			</div>
+
+		</div>
+
+		<div id="scheduleshowmore"></div>
+
+	</div>
+</div>
+
+<!-- SHARE PAGE -->
+<div id="share">
+	<div class="break"></div>
+	<h1>Share this site</h1>
+	<div id="sharetext">
+		<div class="sharetextleft">
+			<p>If you think campus sustainability is important to USC and want to promote the cause, please share this site. We can only make a difference together, so spread the word!</p>
+			<div id="sharebuttons">
+				<div class="share" style="vertical-align: top"><div class="fb-share-button" data-href="http://storm.usc.edu/~shawnren/earthmonth/" data-type="box_count"></div></div>
+				<div class="share"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://storm.usc.edu/~shawnren/earthmonth/" data-text="Help promote sustainability at USC! Learn about the movement here:" data-hashtags="USCsustainability" data-count="vertical">Tweet</a></div>
+			</div>
+		</div>
+		<div class="sharetextright">
+			<p>Want more? Like the Environmental Student Assembly on Facebook for updates and more!</p>
+			<!-- desktop --><div id="fb-like-desktop1"><div class="fb-like" data-href="https://www.facebook.com/uscesa" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div></div>
+			<!-- mobile --><div id="fb-like-mobile1"><div class="fb-like" data-href="https://www.facebook.com/uscesa" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></div>
+		</div>
+		<div class="sharetextleft" id="sharetextleft2">
+			<p>Or, like USC Sustainability here!</p>
+			<!-- desktop --><div id="fb-like-desktop2"><div class="fb-like" data-href="https://www.facebook.com/USCSustainability" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div></div>
+			<!-- mobile --><div id="fb-like-mobile2"><div class="fb-like" data-href="https://www.facebook.com/USCSustainability" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></div>
+		</div>
+	</div>
+
+	<div id="sharecredits">
+		<p>
+		Made by Shawn Ren for USC Earth Month 2014<br>
+		Tree Graphic by Megan Park<br>
+		<span style="color:#a0d5b3"><a href="http://uscesa.com" target="_blank">www.uscesa.com</a>&nbsp;&nbsp;|&nbsp;&nbsp;Environmental Student Assembly</span></p>
+
+	</div>
+
+</div> <!-- END OF CONTAINER DIV -->
+
+
+<!-- BEGIN GOOGLE MAPS API TEXT DIV -->
+<div id="hide">
+<!-- 1) Campus Center -->
+<div class="googleMapsInfoWindow" id="campusCenterText">
+	<h1>Ronald Tutor Campus Center</h1>
+	<h2>Introduction</h2>
+	<p>
+	In March 2000, the U.S. Green Building Council developed a green building certification system, LEED, or Leadership in Energy and Environmental Design.  This system provides a framework for green building design, construction, and maintenance solutions that are meant to cut environmental impacts.
+	<br><br>
+	The Ronald Tutor Campus Center is USC's first LEED certified building, qualifying for a Gold certification by the U.S. Green Building Council in 2010.  The Campus Center is home to numerous university centers, eateries, and student organizations, including the Admissions Center, Epstein Family Alumni Center, and Student Affairs.  The Campus Center is the main hub of student life and activity, with thousands of students and staff utilizing its resources every day.  With such a volume of activity, USC maximizes efficiency through innovative design and sustainably focused systems.
+	</p>
+	<h2>Sustainability</h2>
+	<p>
+	The Campus Center is designed to reduce energy consumption in a variety of ways.  The Campus Center utilizes the campus-wide chilled water system, circulated from the Thermal Energy Storage unit beneath Cromwell field, on a daily basis to reduce the amount of thermal pollution released from the building, and to minimize air-conditioning costs.  The Campus Center consists of roofing materials that have a high solar reflectance index, which maintains the cool temperature of the building, as well as high performance windows that prevent heat gain.  Within the Campus Center, energy efficient fluorescent lights minimize electricity costs, and a parallel refrigeration system comprised of a single scroll of compressors provides cooling to multiple refrigeration units, eliminating the need for separate individual compressors for each refrigeration unit.  High efficiency plumbing fixtures are featured throughout the Campus Center, and account for a 40% reduction in water use. 
+	<br><br>
+	The construction of the Campus Center maintained its sustainable focus, with a construction waste management plan that successfully diverted 95% of demolition and construction waste from landfills.  The building materials were also purchased within a 500-mile radius of campus in order to reduce costs for transportation and disposal. 
+	<br><br>
+	The Campus Center also houses a variety of food options.  Ultra violet exhaust hoods in the kitchens of the Campus Center burn off cooking grease particulates within the hood before releasing them through the ductwork of the Campus Center and into the atmosphere, cutting the air pollution emitted. Food waste at the campus center goes through a food pulping system that reduces the quantity of food waste by up to 80%.  All food products at the Campus Center are served in recycled, recyclable, or biodegradable containers, which are collected and diverted from landfills.  Kitchen and fryer grease is also collected and diverted to private vendors who process it into bio-fuel and animal feed.
+	</p>
+	<h3>"High efficiency plumbing fixtures are featured throughout the Campus Center, and account for a 40% reduction in water use."</h3>
+	<p>
+	LEED certification not only focuses on increasing the efficiency and minimizing the waste from buildings, but also on the health and well being of that building's occupants.  A Construction Indoor Air Quality Management Plan was implemented before the construction of the Campus Center began to protect the health of the workers, and this system has been maintained to manage the air quality of the Campus Center's current occupants.  During the construction of the Campus Center, no adhesives, sealants, paints, or coatings with significant levels of volatile organic compounds were used, in order to ensure the health and safety of students, staff, and visitors for years to come.
+	</p>
+</div>
+
+<!-- 2) Drought Tolerant Landscaping -->
+<div class="googleMapsInfoWindow" id="droughtText">
+	<h1>Drought Tolerant Landscaping</h1>
+	<h2>Introduction</h2>
+	<p>
+	Water supply is a chronic issue in Southern California.  With no large local water supply, a great deal of water is diverted from the Sierra Nevada Mountains and Colorado River to Los Angeles to support the almost 10 million people who live in the basin.  The drought tolerant landscaping area provides a relaxing oasis on campus that minimizes irrigation costs and supply, as all plants in this area are drought tolerant plants, including California natives, which are adapted to little rain. 
+	<br><br>
+	The native plants in this area revitalize the natural environment around them.  Native plants attract local pollinators and promote native plant biodiversity, a difficult feat for native plants in competition with the abundance of invasive species in California. 
+	</p>
+	<h2>Sustainability</h2>
+	<p>
+	Facilities Management Services regulates the campus-wide water management system that limits the amount of water that can be used for irrigation.  The system monitors soil moisture levels and it limits watering to when the system indicates it is necessary.  The system automatically updates itself every night through weather reports and moisture sensors. 
+	<br><br>
+	The system waters sustainably as well; irrigation occurs before 7:00 am in order to minimize evaporation loss, and water flow sensors immediately notify USC when a leak occurs.  Drip irrigation systems greatly reduce water run-off and evaporation by applying water slowly and directly to the soil around each plant, and aeration of the soil minimizes the runoff of water from this soil.
+	</p>
+</div>
+
+<!-- 3) Cromwell Track and Field Stadium -->
+<div class="googleMapsInfoWindow" id="cromwellText">
+	<h1>Cromwell Track and Field Stadium</h1>
+	<h2>Sustainability</h2>
+	<p>
+	40 feet below Cromwell Field rests a 3.2 million gallon thermal energy storage system made of 2,310 cubic yards of pre-stressed concrete.  This massive tank has minimal maintenance costs, and circulates chilled water throughout the buildings on campus to cool them and reduce air conditioning costs.  When electricity rates are lower at night, the water is stored in the tank and chilled.  During the day, while electricity costs are at their peak, this chilled water is then circulated throughout campus and electricity consumption decreases. 
+	<br><br>
+	A pump house beneath Grace Ford Salvatori Hall services the thermal energy storage system and regulates the flows of the system throughout campus.  The storage tank saves the university an estimated 4,500 megawatt-hours of electricity a year, which equates to about $400,000 of electricity costs saved.  Saving electricity reduces CO2 emissions, and the amount of electricity saved by this storage tank equates to the quantity of emissions produced by approximately 615 cars annually. 
+	<br><br>
+	Cromwell Field is covered with synthetic turf that provides numerous sports teams, individual athletes, and the Trojan Marching Band with a place to practice.  The field saves energy and resources by eliminating the need for watering, mowing, and replanting.
+	</p>
+</div>
+
+<!-- 4) The Annenberg School for Communication and Journalism -->
+<div class="googleMapsInfoWindow" id="annenbergText">
+	<h1>The Annenberg School for Communication and Journalism</h1>
+	<h2>Introduction</h2>
+	<p>
+	The Annenberg School for Communication and Journalism is the first school at USC to certify all staff departments through the Green Office Certification Program.  This certification program gives students, staff, and faculty members a framework for implementing sustainable practices in their workplaces.  This program has numerous offices on campus such as the Trojan Marching Band office and the Office of Religious Life, but Annenberg is the first school to be entirely green seal certified.  The Green Office Certification Program utilizes an online calculator that analyzes eight different aspects of sustainability: green information technology, networking and awareness, recycling, food and beverages, transportation, energy management, office supplies, and green innovations.  Looking at these eight aspects of sustainability, the Green Office Certification Program makes suggestions as to how an office can improve its sustainable efforts and become certified.
+	</p>
+	<h2>Sustainability</h2>
+	<p>
+	The Annenberg Committee is a group of Annenberg staff and faculty that has been integral to the Green Office Certification of all of Annenberg.  Among other endeavors, the Annenberg Committee has successfully placed recycling bins in all common areas, implemented multiple timed light switches, and set double-sided default settings to most Xerox devices.  The Annenberg School has also lowered its energy consumption 5-6% annually by implementing a more efficient HVAC system.  Lowering energy consumption by 5% results in an estimated savings of $10,600 annually, saving 97,564.5 lbs of coal and mitigating 285,868 lbs emitted CO2.
+	</p>
+</div>
+
+<!-- 5) USC Recycling -->
+<div class="googleMapsInfoWindow" id="recyclingText">
+	<h1>USC Recycling</h1>
+	<h2>Introduction</h2>
+	<p>
+	USC initiated its recycling program in 1994, and has since diverted on average an estimated 3,500 tons of waste from landfills per year.  In 1996, Facilities Management Services instituted their cardboard recycling program.  This program alone diverts approximately 10 tons of cardboard per week during the school year.  Cardboard is compacted in a bailer in the Facilities Management Services yard, and stored to be shipped off in bulk, saving money on transportation costs and minimizing green house gas emissions.  In 2011, more than 290 tons of cardboard and 640 tons of paper were recycled from the University Park Campus.
+	</p>
+	<h2>Sustainability</h2>
+	<p>
+	More than 100 recycling bins are distributed throughout the University Park Campus.  The recycling that goes into these bins, however, only accounts for 17% of the waste diverted by USC's recycling program.  Facilities Management Services partially sorts through trash waste to separate a greater percentage of recyclable material, and a partnership with Athens Services ensures that recyclables are sorted from trash waste.
+	<br><br>
+	Athens Services also collects USC's composting.  USC composts both food waste and green waste from landscaping.  Athens Services also collects USC's construction and demolition debris, diverting bulk materials from landfills.
+	<br><br>
+	In 2010, 667.16 tons of recycling was collected directly from recycling bins, while 1168.54 tons of recycling was collected after sorting through trash bins.  Facilities Management Services works tirelessly to sort through and dispose of waste responsibly, but it is up to individuals to sort through waste as it is disposed of.  Green efforts at USC have pushed to increase awareness for responsible and sustainable waste diversion, and with every year, more people contribute to the greening of USC.
+	</p>
+	<h3>"In 2010, 667.16 tons of recycling was collected directly from recycling bins, while 1168.54 tons of recycling was collected after sorting through trash bins."</h3>
+	<p>
+	In fall 2012, the USC Office of Sustainability and Facilities Management Services created the Tailgate Waste Diversion and Zero-Waste Tailgate Certification Program.  Tailgate Waste Diversion works to educate tailgaters about recycling and composting before football games.  The Office of Sustainability also is working to certify tailgates, and offers two levels of certification, cardinal and gold.  For more information about the Zero-Waste Tailgate Certification Program and for details on how to certify your tailgate, visit: <a href="http://green.usc.edu/content/zero-waste-tailgate-certification-program-0" target="_blank">http://green.usc.edu/content/zero-waste-tailgate-certification-program-0</a>.
+	</p>
+</div>
+
+<!-- 6) Everybody's Kitchen (EVK) -->
+<div class="googleMapsInfoWindow" id="evkText">
+	<h1>Everybody's Kitchen (EVK)</h1>
+	<p>
+	USC Hospitality recognizes the importance of meeting the needs of the campus without compromising the health of students, employees, or the environment. By initiating several efforts with our practices and attitudes, we hope to reduce our negative impact on the environment by eliminating excess waste and reducing natural resource consumption.
+	<br><br>
+	Sustainable dining initiatives include:
+	<br><br>
+	<b>Grease Recycling</b>: 100% of kitchen grease is recycled.<br>
+	<b>Composting Food Waste</b>: USC owns and operates two food pulpers in the main residential dining kitchens that help USC recycle 100% of the post-consumer food waste at Parkside and EVK Dining Commons. This food waste is then mulched and used for fertilizer or turned into other organic products.<br>
+	<b>Recycled Paper Products</b>: All of the napkins, paper towels, coffee sleeves, and paper product disposable food containers used in USC Hospitality are made from 100% recycled materials and are completely recyclable.<br>
+	<b>Local Sourcing</b>: Nearly all of USC Hospitality's food inventory is purchased from local food distributors, and they also purchase directly from local food producers. 6% of USC Hospitality's food and beverage products are purchased from local producers.<br>
+	<b>Food Donation</b>: All unused, un-served prepared food is donated to the Los Angeles Mission.<br>
+	<b>Trayless Dining</b>: Reduce food waste.
+	</p>
+</div>
+
+
+<!-- 7) Alternative Transportation -->
+<div class="googleMapsInfoWindow" id="transportationText">
+	<h1>Alternative Transportation</h1>
+	<p>
+	USC Auxiliary Services is re-inventing USC's transportation system in order to help clean the air and improve the health of Los Angeles residents.  Efforts include:
+	<br><br>
+	Sustainable dining initiatives include:
+	<br><br>
+	<b>Green Shuttles</b>: All the shuttles and buses at USC run on alternative fuels. The University has 13 bio-diesel shuttles, 1 CNG bus and 11 propane buses. Biodiesel and propane are considered safer than gasoline because they are non-toxic. While biodiesel reduces toxin compounds by 75-85%, the use of propane reduces greenhouse gas emissions by 18%.<br>
+	<b>Campus Cruisers</b>: USC purchases vehicles with a high green rating, including five hybrids, to provide escort services for students and staff.Hybrids produce 80% less greenhouse gases in comparison to regular gasoline vehicles.<br>
+	<b>Zipcar</b>: Zipcar is a car-sharing service for students, faculty, and staff that offers hourly access to low-emission vehicles. USC has 28 fuel-efficient cars stationed throughout campus that help save students money and reduce the need for personal vehicles<br>
+	<b>Fuel Station</b>: The university offers B20 Biodiesel fuel at the fuel station located by the Parking Center. B20 Biodiesel is not a fossil fuel and can reduce the greenhouse gas emissions and other pollutants caused by normal vehicle use.<br>
+	<b>Transit Program</b>: USC subsidizes 22,336 public transportation passes per year which can be used for any Metro, MetroLink, Dash, and LADOT transportation services. This is a good alternative for students, staff, and faculty who wish to use public transportation to travel to and from campus.<br>
+	<b>Carpool/Vanpool</b>: There are 20 Vanpool programs that offer students, faculty, and staff a way to ride with other people to campus.  Carpoolers may access the carpool lane, save money on gas, parking, vehicle maintenance, while reducing yearly emissions.<br>
+	<b>Zimride:</b> is an online social network that helps students find friends, classmates, and co-workers who are interested in carpooling.<br>
+	<b>Expo Light Rail Line</b>: The Exposition Light Rail Transit Line (Expo Line) will travel between Downtown Los Angeles and Culver City with convenient access to USC's University Park Campus.<br>
+	</p>
+</div>
+
+<!-- 8) USC Urban Garden -->
+<div class="googleMapsInfoWindow" id="urbangardenText">
+	<h1>USC Urban Garden</h1>
+	<h2>About</h2>
+	<p>
+	The USC Urban Garden was established in the Spring of 2010 as a partnership between the USC Office of Sustainability and the non profit organization, Urban Farming. Urban Farming supplies the seeds, soil, and tools required to make the garden a reality while volunteers provide the labor to make the garden bloom.
+	<br><br>
+	The garden provides a learning opportunity and a fresh source of vegetables for community members. Neither pesticides nor chemical fertilizer are used to maintain the garden.
+	<br><br> 
+	The garden is maintained and harvested regularly by volunteers that come to the scheduled working and learning sessions.
+	</p>
+</div>
+</div> <!-- END OF DIV THAT HIDES INFOWINDOW TEXT -->
+
+
+
+</body>
+</html>

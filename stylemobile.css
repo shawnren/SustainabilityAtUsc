@@ -1,0 +1,188 @@
+/**** STYLESHEET FOR MOBILE DEVICES ****/
+#container {
+	width: 100%;
+	height: 540px;
+}
+.deleteForMobile {
+	display: none;
+}
+.break {
+	display: none;
+}
+.navbar {
+	left: 0;
+	margin-left: 0;
+}
+#navbar2 {
+	display: none;
+}
+/* ---------- INDEX DIV ---------- */
+video {
+	display: none;
+}
+#title {
+	left: 0;
+	margin-left: 0;
+	width: auto;
+	top: -15px;
+}
+#title h1 {
+	font-size: 48px;
+}
+#titlespecial {
+	font-size: 55px;
+}
+#title h4 {
+	font-size: 17px;
+}
+#navbar1 {
+	border-radius: 0;
+	top: auto;
+	bottom: 0;
+	width: 100%;
+}
+#navbar1 a {
+	display: block;
+	float: none;
+	margin: auto;
+	text-align: left;
+	margin-top: 10px;
+}
+#indexlogosright {
+	display: none;
+}
+/* ---------- ABOUT DIV ---------- */
+#about {
+	height: auto;
+}
+#about h1 {
+	padding: 25px 0px 0px 0px;
+	font-size: 40px;
+}
+#abouttext {
+	padding: 0px;
+}
+#aboutleft {
+	width: 100%;
+	font-size: 17px;
+	text-align: left;
+	margin-top: -20px;
+	padding-bottom: 20px;
+}
+#aboutright {
+	display: none;
+}
+/* ---------- LEARN DIV ---------- */
+#learnpopup {
+	font-size: 16px;
+	width: 90%;
+	top: 50%;
+	left: 0;
+	margin-top: -170px;
+	margin-left: 5%;
+}
+#learnpopup p {
+	margin-top: -4px;
+}
+/* ---------- CAMPAIGN DIV ---------- */
+#campaign {
+	height: auto;
+}
+#campaign h1 {
+	padding: 20px 0px;
+	font-size: 30px;
+	height: 95px;
+}
+#campaignleft {
+	display: none;
+}
+#campaigncopyright {
+	display: none;
+}
+#campaignright {
+	width: 100%;
+	float: none;
+}
+#campaignright p {
+	margin: 150px 25px 20px 25px;
+	font-size: 17px;
+}
+#campaignsignme {
+	width: 245px;
+	font-size: 20px;
+}
+/* ---------- SCHEDULE DIV ---------- */
+#schedule {
+	height: auto;
+}
+#schedule h1 {
+	padding: 25px 0px 0px 0px;
+	font-size: 40px;
+}
+#scheduletext {
+	padding: 15px 0px 20px 0px;
+}
+.schedulecolumn {
+	width: 100%;
+	margin: 0px;
+}
+#schedule p {
+	font-size: 17px;
+}
+.schedulemore {
+	display: block;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.8);
+	margin: 10px 0px 10px -10px;
+	padding: 10px;
+	color: black;
+}
+.schedulemorehide {
+	display: none;
+}
+
+/* ---------- SHARE DIV ---------- */
+#share {
+	height: auto;
+}
+#share h1 {
+	padding: 25px 0px 0px 0px;
+	font-size: 40px;
+}
+#sharetext {
+	border-radius: 0px;
+	padding: 20px 0px;
+	font-size: 17px;
+	width: 95%;
+}
+.sharetextright {
+	text-align: left;
+	margin: 20px;
+}
+#sharetextleft2 {
+	margin: 0px 20px;
+}
+#fb-like-mobile1 {
+	display: block;
+	margin-left: 20px;
+}
+#fb-like-mobile2 {
+	display: block;
+	margin-left: 20px;
+}
+#fb-like-desktop1 {
+	display: none;
+}
+#fb-like-desktop2 {
+	display: none;
+}
+#sharecredits {
+	padding-bottom: 20px;
+	width: 95%;
+	font-size: 17px;
+}
+#sharecredits p {
+	padding: 0px 20px;
+}

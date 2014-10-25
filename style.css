@@ -1,0 +1,435 @@
+@font-face {
+    font-family: 'news_cycleregular';
+    src: url('fonts/newscycle-regular-webfont.eot');
+    src: url('fonts/newscycle-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/newscycle-regular-webfont.woff') format('woff'),
+         url('fonts/newscycle-regular-webfont.ttf') format('truetype'),
+         url('fonts/newscycle-regular-webfont.svg#news_cycleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/Roboto-Light-webfont.eot');
+    src: url('fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+}
+#container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.navbar {
+	position: absolute;
+	left: 50%;
+	z-index: 100;
+	margin: auto;
+	margin-left: -375px;
+}
+.navbar a {
+	display: inline-block;
+	float: left;
+	margin: 10px 15px 0px 15px;
+	text-align: center;
+	width: 120px;
+	text-decoration: none;
+}
+.navbar a .navcircle {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: auto;
+}
+.navbar a p {
+	display: inline-block;
+	color: white;
+	font-family: 'robotolight', Times;
+	margin-top: 5px;
+	margin-left: 5px;
+	line-height: 120%;
+}
+#navbar1 {
+	top: 65%;
+	background-color: rgba(0,0,0,0.6);
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+#navbar2 {
+	top: 0%;
+	display: none;
+	position: fixed;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	background-color: rgba(0,0,0,0.8);
+}
+.break {
+	height: 80px;
+}
+.clear {
+	clear: both;
+}
+/* ---------- INDEX DIV ---------- */
+#index {
+	position: relative;
+	width: 100%;
+	background-color: #199FF2;
+	height: 100%;
+}
+video {
+	width: 100%;
+	background: url('background/backup.png');
+	background-size: 100% 100%;
+}
+#title {
+	color: white;
+	font-family: 'news_cycleregular', 'robotolight', Times;
+	position: absolute;
+	left: 50%;
+	top: 25%;
+	width: 380px;
+	padding: 15px 30px;
+	margin-left: -280px;
+	text-align: right;
+}
+#title h1 {
+	font-size: 50px;
+	line-height: 130%;
+	margin-bottom: 11px;
+}
+#titlespecial {
+	color: #CDFF32; 
+	font-size: 63px
+}
+
+#title h4 {
+	font-family: 'robotolight', Arial;
+	font-size: 18px;
+}
+
+#indexlogosright {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 25px;
+	display: inline;
+}
+#indexlogosright img {
+	margin-right: 10px;
+}
+
+/* ---------- ABOUT DIV ---------- */
+#about {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #199FF2;
+	color: white;
+}
+#about h1 {
+	font-family: 'news_cycleregular', 'robotolight', Times;
+	font-size: 40px;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+#abouttext {
+	margin: auto;
+	text-align: center;
+	padding: 15px 0px;
+	width: 80%;
+}
+#aboutleft {
+	width: 40%;
+	vertical-align: top;
+	text-align: right;
+	display: inline-block;
+	font-family: 'robotolight', Arial;
+	font-size: 18px;
+}
+#aboutright {
+	width: 50%;
+	display: inline-block;
+}
+
+/* ---------- LEARN DIV ---------- */
+#learn {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#learnpopup {
+	background-color: white;
+	height: 170px;
+	width: 500px;
+	font-family: 'robotolight', Arial;
+	font-size: 18px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -170px;
+	margin-left: -250px;
+	z-index: 9;
+	box-shadow: 10px 10px 5px #424242;
+}
+#learnpopup p {
+	padding: 0px 25px;
+}
+#learnpopupback {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 8;
+	top: 0;
+}
+
+/* ---------- CAMPAIGN DIV ---------- */
+#campaign {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: white;
+}
+#campaign h1 {
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	margin: 0px;
+	padding-top: 60px;
+	background-color: rgba(0,0,0,0.8);
+	font-family: 'news_cycleregular', 'robotolight', Times;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+#campaigncopyright {
+	position: absolute;
+	color: #A4A4A6;
+	left: 20px;
+	bottom: 15px;
+	font-family: 'robotolight', Arial;
+	font-size: 10px;
+}
+#campaignleft {
+	width: 40%;
+	height: 100%;
+	margin: 0px;
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+}
+#campaignleft img {
+	float: right;
+}
+#campaignright {
+	width: 60%;
+	display: inline-block;
+	float: left;
+	font-family: 'robotolight', Arial;
+	font-size: 18px;
+}
+#campaignright p {
+	margin: 185px 50px 28px 38px;
+}
+#campaignsignme {
+	background-color: #ed2d23;
+	width: 340px;
+	height: 40px;
+	padding: 10px 15px;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	font-family: 'news_cycleregular', 'robotolight', Times;
+	border-radius: 10px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+#campaignright a {
+	text-decoration: none;
+}
+
+/* ---------- EARTH MONTH SCHEDULE DIV ---------- */
+#schedule {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #458164;
+	color: white;
+	font-family: 'news_cycleregular', 'robotolight', Times;
+}
+#schedule h1 {
+	font-size: 40px;
+	color: #D6FA66;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+#schedule p {
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+}
+#schedule p a {
+	color: #d8ede2;
+	word-wrap: break-word;
+}
+#scheduletext {
+	font-family: 'robotolight', Arial;
+	color: white;
+	margin: auto;
+	text-align: left;
+	padding: 15px 0px;
+	width: 84%;
+}
+.schedulecolumn {
+	width: 29%;
+	display: inline-block;
+	margin: 20px;
+	vertical-align: top;
+}
+#schedule h2 {
+	font-size: 30px;
+	color: #a0d5b3;
+	display: inline-block;
+	margin: 0px 0px 20px 0px;
+}
+.scheduleh3 {
+	color: #D6FA66;
+	font-size: 23px;
+}
+#schedule h4 {
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0px;
+}
+#schedule h5 {
+	font-size: 17px;
+	margin: 0px 0px 5px 15px;
+}
+#schedule h6 {
+	margin: 0px 0px 0px 15px;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: rgb(220,220,220);
+}
+.schedulemore {
+	display: none;
+}
+#sm2 {
+	display: none;
+}
+#sm3 {
+	display: none;
+}
+/* ---------- SHARE DIV ---------- */
+#share {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #0B4366;
+	color: white;
+}
+#share h1 {
+	font-family: 'news_cycleregular', 'robotolight', Times;
+	font-size: 40px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+#sharetext {
+	margin: auto;
+	width: 70%;
+	font-family: 'robotolight', Arial;
+	font-size: 18px;
+	background-color: rgba(255,255,255,0.84);
+	padding: 20px;
+	color: black;
+	margin-top: 40px;
+}
+.sharetextleft {
+	margin: 0px 20px;
+}
+#sharebuttons {
+	margin-left: 20px;
+}
+.share {
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+.sharetextright {
+	text-align: right;
+	margin: 0px 20px 20px 20px;
+}
+#sharetextleft2 {
+	margin: -20px 20px 20px 20px;
+}
+#fb-like-mobile1 {
+	display: none;
+}
+#fb-like-mobile2 {
+	display: none;
+}
+#sharecredits {
+	font-family: 'robotolight', Arial;
+	font-size: 18px;
+	margin: auto;
+	width: 70%;
+	margin-top: 20px;
+	line-height: 150%;
+}
+#sharecredits a {
+	color:#a0d5b3;
+	text-decoration: none;
+}
+#sharecredits a:hover {
+	text-decoration: underline;
+}
+
+/* ---------- GOOGLE MAPS API TEXT DIV ---------- */
+#hide {
+	height: 1px;
+	width: 1px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.googleMapsInfoWindow {
+	font-family: 'robotolight', Arial;
+	max-height: 500px;
+	overflow: auto;
+}
+.googleMapsInfoWindow p {
+	font-size: 14px;
+}
+.googleMapsInfoWindow h1 {
+	font-size: 26px;
+	font-weight: bold;
+}
+.googleMapsInfoWindow h2 {
+	font-size: 16px;
+	font-weight: bold;
+}
+.googleMapsInfoWindow h3 {
+	text-align: center;
+	font-style: oblique;
+	font-size: 18px;
+	margin: 23px auto;
+	width: 80%;
+}
